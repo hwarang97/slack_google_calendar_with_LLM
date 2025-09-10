@@ -1,10 +1,46 @@
 [project]
 name = "google-calendar-app"
 version = "0.1.0"
-description = "Add your description here"
+description = "slack app for google-canlendar with LLM"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.116.1",
     "uvicorn[standard]>=0.35.0",
 ]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "pre-commit>=4.3.0",
+    "pyright>=1.1.405",
+    "ruff>=0.12.12",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # pyupgrade
+    "UP",
+    # Pyflakes
+    "F",
+    # isort
+    "I",
+    # flake8-bugbear
+    "B"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py313']
+
+[tool.pyright]
+include = ["."]
+exclude = [
+        ".venv",
+        "**/__pycache__",
+    ]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = "warning"
+reportMissingImports = "warning"
