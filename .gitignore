@@ -12,7 +12,7 @@ wheels/
 # vscode
 .vscode
 
-# private 
+# private
 .env
 
 # ngrok
