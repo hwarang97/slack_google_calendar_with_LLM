@@ -27,7 +27,7 @@ PORT = 8000
 
 # run ngrok
 tunnel = ngrok.connect(addr=f"{PORT}")
-process = ngrok.get_ngrok_process()
+process = ngrok.get_ngrok_process()  # pyright: ignore
 print(f"public IP: {tunnel}")
 
 try:

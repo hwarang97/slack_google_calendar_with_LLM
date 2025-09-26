@@ -114,7 +114,6 @@ dependencies = [
     { name = "fastapi" },
     { name = "pyngrok" },
     { name = "python-dotenv" },
-    { name = "types-psutil" },
     { name = "uvicorn", extra = ["standard"] },
 ]
 
@@ -131,7 +130,6 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.116.1" },
     { name = "pyngrok", specifier = ">=7.3.0" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
-    { name = "types-psutil", specifier = ">=7.0.0.20250822" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.35.0" },
 ]
 
@@ -385,15 +383,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/15/b9/cc3017f9a9c9b6e27c5106cc10cc7904653c3eec0729793aec10479dd669/starlette-0.47.3.tar.gz", hash = "sha256:6bc94f839cc176c4858894f1f8908f0ab79dfec1a6b8402f6da9be26ebea52e9", size = 2584144, upload-time = "2025-08-24T13:36:42.122Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ce/fd/901cfa59aaa5b30a99e16876f11abe38b59a1a2c51ffb3d7142bb6089069/starlette-0.47.3-py3-none-any.whl", hash = "sha256:89c0778ca62a76b826101e7c709e70680a1699ca7da6b44d38eb0a7e61fe4b51", size = 72991, upload-time = "2025-08-24T13:36:40.887Z" },
-]
-
-[[package]]
-name = "types-psutil"
-version = "7.0.0.20250822"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/6d/aa/09699c829d7cc4624138d3ae67eecd4de9574e55729b1c63ca3e5a657f86/types_psutil-7.0.0.20250822.tar.gz", hash = "sha256:226cbc0c0ea9cc0a50b8abcc1d91a26c876dcb40be238131f697883690419698", size = 20358, upload-time = "2025-08-22T03:02:04.556Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7d/46/45006309e20859e12c024d91bb913e6b89a706cd6f9377031c9f7e274ece/types_psutil-7.0.0.20250822-py3-none-any.whl", hash = "sha256:81c82f01aba5a4510b9d8b28154f577b780be75a08954aed074aa064666edc09", size = 23110, upload-time = "2025-08-22T03:02:03.38Z" },
 ]
 
 [[package]]
