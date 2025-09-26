@@ -26,7 +26,7 @@ conf.get_default().ngrok_path = "./ngrok.exe"
 PORT = 8000
 
 # run ngrok
-tunnel = ngrok.connect(PORT)
+tunnel = ngrok.connect(addr=f"{PORT}")
 process = ngrok.get_ngrok_process()
 print(f"public IP: {tunnel}")
 
