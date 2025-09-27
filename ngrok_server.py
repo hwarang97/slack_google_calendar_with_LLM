@@ -27,11 +27,11 @@ PORT = 8000
 
 # run ngrok
 tunnel = ngrok.connect(addr=f"{PORT}")
-process = ngrok.get_ngrok_process()  # pyright: ignore
+process = ngrok.get_ngrok_process()
 print(f"public IP: {tunnel}")
 
 try:
-    process.proc.wait()
+    process.proc.wait()  # pyright: ignore [reportUnknownMemberType]
 except KeyboardInterrupt:
     logging.info("Shutting down server by user request (Ctrl+ c).")
     ngrok.kill()
