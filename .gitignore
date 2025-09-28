@@ -17,3 +17,4 @@ wheels/
 
 # ngrok
 ngrok.exe
+ngrok_server.log
